@@ -11,7 +11,7 @@ matrix:
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
-  file: $UPLOAD_FILE
+  file: "target/release/simplecli"
   skip_cleanup: true
   on:
     tags: true
